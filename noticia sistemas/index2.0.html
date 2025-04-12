@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea Noticias</title>
-   <link rel="stylesheet" href="styles.css">
-   
-   <style>
+    <link rel="stylesheet" href="styles.css">
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,10 +13,11 @@
             background-color: #f0f0f0;
         }
         header {
-            background-color: #004080; 
+            background: linear-gradient(90deg, #004080, #0066cc); 
             color: white;
             padding: 30px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .noticia {
             margin: 20px;
@@ -25,6 +25,7 @@
             background-color: #ffffff; 
             border: 1px solid #cccccc;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .titulo {
             color: #800000; 
@@ -33,45 +34,49 @@
         .contenido {
             color: #080808;
             margin-bottom: 20px;
-          
-            
-
         }
-       .centrar {
-           display:flex;
-           justify-content: center;
-           alingn_items: center;
-           flex-direction: column;
-           gap: 20px;
-       }
-       .centrar img {
-           max-widhth: 80%;
-           border-radius: 10px;
-           box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-       }
-       table { width: 100%;
-              border-collapse: collapse;
-              margin-top: 20px;
-              margin-top: 20px;
-             }
-       th,td {
-        border:1px solid #ddd;
-           text-align: center;
-           padding 10px;
-       }
-       th{
-           background-color: #f4f4f4;
-       }
-       footer{ 
-           background-color: #004080;
-           color: white;
-           text-align: center;
-           padding: 15px;
-           margin-top: 40px;
-       }
-           
-           
-           
+        .centrar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .centrar img {
+            max-width: 80%;
+            border-radius: 10px;
+            border: 3px solid #004080;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:hover {
+            background-color: #f0f8ff;
+        }
+        footer { 
+            background: linear-gradient(90deg, #004080, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <style>
+        body {
+            background-color: #ffcccc; /* Cambia el fondo a un color rosado */
+        }
     </style>
 </head>
 <body>
@@ -80,23 +85,14 @@
     </header>
     <section class="noticia">
         <h2 class="titulo">Noticias deportivas</h2>
-
-        <div class= "contenido">
-            <img scr="descarga (1).jpg" alt="imagen de noticia 1">
+        <div class="contenido">
+            <img src="descarga (1).jpg" alt="imagen de noticia 1">
             <br><br>
-            <img scr= "gwn9c3o10i9wr6fovhob.jpg" alt="Imagen de noticia 2">
+            <img src="gwn9c3o10i9wr6fovhob.jpg" alt="Imagen de noticia 2">
             <div>
                 <h2 style="text-align: center; margin-top: 40px;">Tabla de posiciones</h2>
-
-                <h2 style="text-align: center; margin-top: 40px;">Tabla de posiciones</h2>
-        <p style="text-align: justify;">
-            
-        
-           
-         
-                    Sólo han pasado dos semanas desde el Día Inaugural, pero ya ha habido muchos grandes momentos durante la temporada del 2025.Posiciones de Grandes Ligas
-Cada equipo ha visto al menos una historia prometedora en este inicio, y muchos ya están pagando grandes dividendos.
-Con la ayuda de los 30 redactores de MLB.com, aquí hay una realidad temprana de la campaña en la que cada equipo puede creer
+                <p style="text-align: justify;">
+                    Sólo han pasado dos semanas desde el Día Inaugural, pero ya ha habido muchos grandes momentos durante la temporada del 2025. Posiciones de Grandes Ligas. Cada equipo ha visto al menos una historia prometedora en este inicio, y muchos ya están pagando grandes dividendos. Con la ayuda de los 30 redactores de MLB.com, aquí hay una realidad temprana de la campaña en la que cada equipo puede creer.
                 </p>
                 <table>
                     <thead>
@@ -119,12 +115,11 @@ Con la ayuda de los 30 redactores de MLB.com, aquí hay una realidad temprana de
                         </tr>
                     </tbody>
                 </table>
-
-            </body>
-        
-        </span>
-            </html>
-      
-        </video>
+            </div>
+        </div>
     </section>
+    <footer>
+        <p>© 2025 Revista Deportiva. Todos los derechos reservados.</p>
+    </footer>
 </body>
+</html>
